@@ -35,7 +35,7 @@ class TuyaDevice:
   def __init__(self, api, dev_info, gateway_id=None):
     self.api = api
 
-    # print(json.dumps(dev_info, indent=2))
+    print(json.dumps(dev_info, indent=2))
 
     self._schema = json.loads(dev_info["schema"])
     self._id = dev_info["devId"]
